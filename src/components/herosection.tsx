@@ -1,4 +1,4 @@
-// import { Card, CardHeader, CardFooter, CardTitle, CardDescription, CardContent } from  
+  
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "./ui/button"
@@ -11,14 +11,21 @@ export default function Herosection (){
     width={1440}
     height={716}
     alt=""
-    className="absolute inset-0 w-full object-cover"
+    className="md:absolute inset-0 w-full object-cover"
   />
-  <div className="relative text-white p-32">
+  {/* <Image
+    src={"/hero2.jpg"}
+    width={414}
+    height={716}
+    alt=""
+    className="absolute inset-0 w-full object-cover"
+  /> */}
+  <div className="relative text-white  p-32">
     <h5 className="font-bold text-sm mt-16">SUMMER 2020</h5>
     <h1 className="font-bold text-5xl my-9">NEW COLLECTION</h1>
     <h3 className="font-semibold text-lg">We Know how large objects will act,</h3>
     <h3 className="font-semibold text-lg mb-5">but things on small scale</h3>
-    <Button className="bg-green-500 rounded-sm px-14 py-5"><Link href={"/shop"}>SHOP NOW</Link></Button>
+    <Button className="bg-green-500 rounded-sm md:px-14 md:py-5 w-[221px] h-[62px]"><Link href={"/shop"}>SHOP NOW</Link></Button>
   </div>
 </div>
 
@@ -29,7 +36,7 @@ export default function Herosection (){
   <p className="text-[#737373] mb-9">Problems trying to resolve the conflict</p>
  
   </div>
-  <div className="flex justify-between ">    
+  <div className="grid md:flex md:justify-between grid-cols-1 ">    
     <div><Image src={"/filter.png"} width={510} height={500} alt=""/></div>
     <div><Image src={"/editor2.png"} width={240} height={500} alt=""/></div>
     <div className="flex flex-col space-y-5">
@@ -85,7 +92,7 @@ export default function Herosection (){
             <h1 className="text-gray-900 font-bold my-3">Graphic Design</h1>
             <p className="text-gray-400 mr-5 font-bold mb-3">English Department</p>
             <p className="text-gray-400 ml-5 font-bold">$16.48<span className="text-[#23856D] font-bold">$6.48</span></p>
-            <Image src={"/product-colors.png"} width={82} height={16} alt="" className="ml-20"/>
+            <Image src={"/product-colors.png"} width={82} height={16} alt="" className="ml-[93px]"/>
           </div>
 </div>
 </section>
@@ -130,7 +137,7 @@ export default function Herosection (){
             <h1 className="text-gray-900 font-bold my-3">Graphic Design</h1>
             <p className="text-gray-400 mr-5 font-bold mb-3">English Department</p>
             <p className="text-gray-400 ml-5 font-bold">$16.48<span className="text-[#23856D] font-bold">$6.48</span></p>
-            <Image src={"/product-colors.png"} width={82} height={16} alt="" className="ml-20"/>
+            <Image src={"/product-colors.png"} width={82} height={16} alt="" className="ml-[93px]"/>
           </div>
 </div>
       </section>
@@ -140,7 +147,7 @@ export default function Herosection (){
 
 
 </section>
-<section className="bg-[#23856D] h-[570px]  text-white flex justify-between ">
+<section className="bg-[#23856D] h-[570px]  text-white  space-x-10 grid grid-cols-2 ">
 <div className="p-20 ml-28">
     <h5 className="font-semibold text-sm text-gray-300 mt-5">SUMMER 2020</h5>
             <h1 className="font-bold text-6xl mt-9">Vita Classic</h1>

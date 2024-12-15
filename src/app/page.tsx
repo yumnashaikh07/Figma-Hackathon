@@ -5,8 +5,8 @@ import Herosection from "@/components/herosection";
 export default function Home() {
   return (
     <main>
-      <div className="bg-slate-900">
-      <Herobanner  /></div>
+      <div className="md:bg-slate-900">
+      <Herobanner/></div>
       <Header/>
       <Herosection/></main>
   );
